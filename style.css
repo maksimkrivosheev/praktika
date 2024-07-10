@@ -1,0 +1,130 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #fff;
+    padding: 20px;
+    margin-right: 20px;
+}
+
+.categories {
+    list-style: none;
+    padding: 0;
+}
+
+.categories li {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+}
+
+.categories li:last-child {
+    border-bottom: none;
+}
+
+.categories li .fas {
+    float: right;
+}
+
+.content {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.instructions {
+    display: none;
+}
+
+.instructions ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.instructions li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.instructions li:last-child {
+    border-bottom: none;
+}
+
+.instructions li:hover {
+    background-color: #f0f0f0;
+}
+
+.instruction-details {
+    padding: 20px;
+    border-top: 1px solid #ddd;
+    display: none;
+}
+
+.instruction-details h2 {
+    margin-top: 0;
+}
+
+.instruction-details .details {
+    margin-bottom: 20px;
+}
+
+.more-info {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.category-content {
+    display: none;
+}
+
+.category-content.active {
+    display: block;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.admin-button {
+    background-color: #4CAF50; /* Зеленый цвет */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 5px; /* Скругленные углы */
+    cursor: pointer;
+}

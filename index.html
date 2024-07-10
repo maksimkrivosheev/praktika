@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Инструкции для пользователей УФК</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Инструкции для пользователей УФК</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="sidebar">
+                <div class="admin-login">
+                    <label for="admin-login">Логин:</label>
+                    <input type="text" id="admin-login">
+                    <label for="admin-password">Пароль:</label>
+                    <input type="password" id="admin-password">
+                    <button id="admin-login-button">Войти</button>
+                </div>
+                <div class="admin-panel" style="display: none;">
+                    <h2>Админ-панель</h2>
+                    <button id="add-instruction" class="admin-button">Добавить инструкцию</button>
+                    <button id="delete-instruction" class="admin-button">Удалить инструкцию</button>
+                </div>
+                <h2>Выберите роль:</h2>
+                <div class="role-buttons">
+                    <button class="role-button active" data-role="client">Клиент</button>
+                    <button class="role-button" data-role="admin">Администратор</button>
+                </div>
+                <h2>Выберите раздел:</h2>
+                <ul class="categories">
+                    <li data-category="zkvs">
+                        <span>ЗКВС</span>
+                        <i class="fas fa-caret-down"></i>
+                    </li>
+                    <li data-category="internet">
+                        <span>Интернет</span>
+                        <i class="fas fa-caret-down"></i>
+                    </li>
+                    <li data-category="other">
+                        <span>Прочее</span>
+                        <i class="fas fa-caret-down"></i>
+                    </li>
+                </ul>
+            </div>
+            <div class="content">
+                <div class="instructions">
+                    <!-- Instructions for ZKVS -->
+                    <div class="category-content" data-category="zkvs">
+                        <h3>ЗКВС</h3>
+                        <ul id="zkvs-instructions">
+                            <li data-instruction="zkvs-instruction-1" class="instruction" data-link="instruction1.html">Получение и настройка APM</li>
+                            <li data-instruction="zkvs-instruction-2" class="instruction" data-link="instruction2.html">Информация о получении и настройке APM</li>
+                            <li data-instruction="zkvs-instruction-3" class="instruction" data-link="instruction3.html">Получение доступа к ЗКВС</li>
+                            <li data-instruction="zkvs-instruction-4" class="instruction" data-link="instruction4.html">Получение сертификата ЭП</li>
+                            <li data-instruction="zkvs-instruction-5" class="instruction" data-link="instruction5.html">ПОИБ СОБИ</li>
+                            <li data-instruction="zkvs-instruction-6" class="instruction" data-link="instruction6.html">Работа в СУЭ</li>
+                        </ul>
+                    </div>
+
+                    <!-- Instructions for Internet -->
+                    <div class="category-content" data-category="internet">
+                        <h3>Интернет</h3>
+                        <ul id="internet-instructions">
+                            <li data-instruction="internet-instruction-1" class="instruction" data-link="instruction7.html">Получение и настройка АРМ</li>
+                            <li data-instruction="internet-instruction-2" class="instruction" data-link="instruction8.html">Получение доступа к ВЛВС-И</li>
+                        </ul>
+                    </div>
+
+                    <!-- Instructions for Other -->
+                    <div class="category-content" data-category="other">
+                        <h3>Прочее</h3>
+                        <ul id="other-instructions">
+                            <li data-instruction="other-instruction-1" class="instruction" data-link="instruction9.html">Доступ в АРМ ГС</li>
+                            <li data-instruction="other-instruction-2" class="instruction" data-link="instruction10.html">Организация ВКС</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="instruction-details">
+                    <h2>Подробная инструкция</h2>
+                    <p class="details"></p>
+                    <a href="#" class="more-info">Подробнее</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 УФК</p>
+    </footer>
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit-id.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
